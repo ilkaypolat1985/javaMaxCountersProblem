@@ -21,7 +21,7 @@ public class Main {
 
         for (int instruction : instructions) {
             if (instruction <= counterRange) {
-                int instructionIndex = instruction -1;
+                int instructionIndex = instruction - 1;
                 if (counters[instructionIndex] > startLine) {
                     counters[instructionIndex] += 1;
                 } else {
