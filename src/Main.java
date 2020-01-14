@@ -21,15 +21,15 @@ public class Main {
 
         for (int instruction : instructions) {
             if (instruction <= counterRange) {
-
-                if (counters[instruction - 1] > startLine) {
-                    counters[instruction - 1] += 1;
+                int instructionIndex = instruction -1;
+                if (counters[instructionIndex] > startLine) {
+                    counters[instructionIndex] += 1;
                 } else {
-                    counters[instruction - 1] = startLine + 1;
+                    counters[instructionIndex] = startLine + 1;
                 }
 
-                if (maxCounter < counters[instruction - 1]) {
-                    maxCounter = counters[instruction - 1];
+                if (maxCounter < counters[instructionIndex]) {
+                    maxCounter = counters[instructionIndex];
                 }
 
             } else {
